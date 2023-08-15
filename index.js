@@ -7,7 +7,7 @@ fetchBreedDescription(breed, (error, data) => {
     console.log('Error:', error);
   } else {
     if (data) {
-      console.log(data);
+      console.log(data[0].description);
     } else {
       console.log(`Breed '${breed}' is not found!`);
     }
